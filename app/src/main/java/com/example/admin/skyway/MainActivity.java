@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // TODO Auto-generated method stub
                 Intent i = new Intent(getApplicationContext(),NewCustomer.class);
-                startActivity(i);
+                startActivity(i);//starting new activity
             }
         });
     }
