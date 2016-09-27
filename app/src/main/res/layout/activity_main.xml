@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.admin.skyway.MainActivity">
+
+    <Button
+        android:id="@+id/cus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/newcp"
+        android:textAllCaps="true"
+        android:layout_marginTop="150dp"
+        />
+
+    <Button
+        android:id="@+id/bkcp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bkcp"
+        android:textAllCaps="true" />
+
+    <Button
+        android:id="@+id/pr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pr"
+        android:textAllCaps="true" />
+
+    <Button
+        android:id="@+id/payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/py"
+
+        android:textAllCaps="true" />
+
+</LinearLayout>

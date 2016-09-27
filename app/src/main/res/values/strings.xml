@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">SkywayCableMedia</string>
+    <string name="bkcp">book complaint</string>
+    <string name="newcp">new customer</string>
+    <string name="pr">products</string>
+    <string name="py">payments</string>
+    <string name="title_activity_products">Products</string>
+    <string name="Name">name</string>
+    <string name="Address">address</string>
+    <string name="Phone_no">Phone no</string>
+    <string name="Alternate_no">Alternate no</string>
+    <string name="Tentent_of">tenent of </string>
+    <string name="Payment_mode">Payment mode</string>
+    <string name="a">Half yearly</string>
+    <string name="b">Yearly</string>
+    <string name="c">Monthly</string>
+    <string name="doc">Documents</string>
+    <string-array name="documents_array">
+        <item>Aadhaar Card</item>
+        <item>Ration card</item>
+        <item>Driving Licence</item>
+        <item>Passport</item>
+        <item>Agreement</item>
+    </string-array>
+    <string name="upload">Upload</string>
+    <string name="submit">Submit</string>
+</resources>
