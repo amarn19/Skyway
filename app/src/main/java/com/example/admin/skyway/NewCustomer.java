@@ -29,49 +29,50 @@ public class NewCustomer extends AppCompatActivity {
 // Apply the adapter to the spinner
         spinner.setAdapter(adapter);
         ///////////////////////////////////////////////////////////////////////////////////////////////
-        EditText nm1 = (EditText)findViewById(R.id.nm);
-        EditText ad1 = (EditText)findViewById(R.id.address);
-        EditText ph1 = (EditText)findViewById(R.id.phone_no);
-        EditText alt1 = (EditText)findViewById(R.id.altphone_no);
-        EditText tent1 = (EditText)findViewById(R.id.tent);
-        CheckBox m=(CheckBox)findViewById(R.id.monthly) ;
-        CheckBox y=(CheckBox)findViewById(R.id.full) ;
-        CheckBox h=(CheckBox)findViewById(R.id.half) ;
-        Spinner mySpinner = (Spinner)findViewById(R.id.documents_spinner);
 
-        String doc = mySpinner.getSelectedItem().toString();
-        String name = nm1.getText().toString();
-        String addr = ad1.getText().toString();
-        String phno = ph1.getText().toString();
-        String altno = alt1.getText().toString();
-        String tentof = tent1.getText().toString();
-        if(m.isChecked())
-        {
-            payment+=m.getText().toString();
-        }
-        if(h.isChecked())
-        {
-            payment+=h.getText().toString();
-        }
-        if(y.isChecked())
-        {
-            payment+=y.getText().toString();
-        }
+    }
+public void getdata(View v)
+{
+    EditText nm1 = (EditText)findViewById(R.id.nm);
+    EditText ad1 = (EditText)findViewById(R.id.address);
+    EditText ph1 = (EditText)findViewById(R.id.phone_no);
+    EditText alt1 = (EditText)findViewById(R.id.altphone_no);
+    EditText tent1 = (EditText)findViewById(R.id.tent);
+    CheckBox m=(CheckBox)findViewById(R.id.monthly) ;
+    CheckBox y=(CheckBox)findViewById(R.id.full) ;
+    CheckBox h=(CheckBox)findViewById(R.id.half) ;
+    Spinner mySpinner = (Spinner)findViewById(R.id.documents_spinner);
 
-        details+="\nName:"+name+"\nAddress"+addr+"\nPhone no:"+phno+"\nAlternate no:"+altno+"\nTenent of:"+tentof+"\ndocuments:"+doc+"\nPayment Mode:"+payment;
+    String doc = mySpinner.getSelectedItem().toString();
+    String name = nm1.getText().toString();
+    String addr = ad1.getText().toString();
+    String phno = ph1.getText().toString();
+    String altno = alt1.getText().toString();
+    String tentof = tent1.getText().toString();
+    if(m.isChecked())
+    {
+        payment+=m.getText().toString();
+    }
+    if(h.isChecked())
+    {
+        payment+=h.getText().toString();
+    }
+    if(y.isChecked())
+    {
+        payment+=y.getText().toString();
     }
 
+    details+="\nName:"+name+"\nAddress"+addr+"\nPhone no:"+phno+"\nAlternate no:"+altno+"\nTenent of:"+tentof+"\ndocuments:"+doc+"\nPayment Mode:"+payment;
+}
     public void submit(View v)
     {
-        {
+        getdata(v);
             Intent email = new Intent(Intent.ACTION_SEND);
             email.putExtra(Intent.EXTRA_EMAIL, new String[]{"amarn19@gmail.com"});
-            email.putExtra(Intent.EXTRA_SUBJECT, "orderSummary");
+            email.putExtra(Intent.EXTRA_SUBJECT, "NewCustomerDetails");
             email.putExtra(Intent.EXTRA_TEXT,details);
             email.setType("message/rfc822");
             startActivity(Intent.createChooser(email, "Choose an Email client :"));
-        }
-
 
     }
 
