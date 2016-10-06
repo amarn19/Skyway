@@ -58,35 +58,32 @@ public class Products extends AppCompatActivity {
                 R.drawable.f,
                 R.drawable.g};
 
-        Card a = new Card(this.getString(R.string.connector), 13, covers[0]);
+        Card a = new Card(this.getString(R.string.connector), 50, covers[0]);
         CardList.add(a);
 
-        a = new Card("Xscpae", 8, covers[1]);
-        CardList.add(a);
-
-
-        a = new Card("Maroon 5", 11, covers[2]);
+        a = new Card(this.getString(R.string.spikebuster), 200, covers[1]);
         CardList.add(a);
 
 
-        a = new Card("Born to Die", 12, covers[3]);
+        a = new Card(this.getString(R.string.tvcomp), 150, covers[2]);
         CardList.add(a);
 
 
-        a = new Card("Honeymoon", 14, covers[4]);
+        a = new Card(this.getString(R.string.rcacomp), 100, covers[3]);
         CardList.add(a);
 
 
-        a = new Card("I Need a Doctor", 1, covers[5]);
+        a = new Card(this.getString(R.string.hdmi), 300, covers[4]);
         CardList.add(a);
 
 
-        a = new Card("Loud", 11, covers[6]);
+        a = new Card(this.getString(R.string.gameselector), 150, covers[5]);
         CardList.add(a);
 
 
-        a = new Card("Legend", 14, covers[7]);
+        a = new Card(this.getString(R.string.vgacable), 100, covers[6]);
         CardList.add(a);
+
 
 
         adapter.notifyDataSetChanged();
