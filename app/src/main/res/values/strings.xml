@@ -23,5 +23,18 @@
         <item>Agreement</item>
     </string-array>
     <string name="upload">Upload</string>
+    <string name="Complaint_type">Complaint Type</string>
+    <string name="five">Five Channel</string>
+    <string name="seven">Seven Bad</string>
+    <string name="others">Others</string>
     <string name="submit">Submit</string>
+    <string name="connector">Submit</string>
+    <string name="spikebuster">Spike buster</string>
+    <string name="tvcomp">Tv-Comp Connector</string>
+    <string name="rcacomp">RCA-Comp Connector</string>
+    <string name="hdmi">HDMI Cable</string>
+    <string name="gameselector">Game Selector</string>
+    <string name="vgacable">VGA Cable</string>
+
+
 </resources>

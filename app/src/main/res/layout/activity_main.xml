@@ -14,11 +14,14 @@
         android:text="@string/newcp"
         android:textAllCaps="true"
         android:layout_marginTop="150dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         />
 
     <Button
         android:id="@+id/bkcp"
-
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/bkcp"
@@ -29,14 +32,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/pr"
-        android:textAllCaps="true" />
+        android:textAllCaps="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
 
     <Button
         android:id="@+id/payment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/py"
-
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:textAllCaps="true" />
 
 </LinearLayout>

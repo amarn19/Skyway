@@ -19,5 +19,28 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), NewCustomer.class));
             }
         });
+
+        Button bn1=(Button)findViewById(R.id.bkcp);
+        bn1.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent i = new Intent(getApplicationContext(),BookComplaint.class);
+                startActivity(i);//starting new activity
+            }
+        });
+        Button bn2=(Button)findViewById(R.id.pr);
+        bn2.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent i = new Intent(getApplicationContext(),Products.class);
+                startActivity(i);//starting new activity
+            }
+        });
     }
+
 }
+
