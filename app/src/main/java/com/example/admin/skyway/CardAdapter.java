@@ -29,13 +29,13 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.MyViewHolder> 
     private List<Card>CardList;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView title, count;
+        public TextView title, price;
         public ImageView thumbnail;
 
         public MyViewHolder(View view) {
             super(view);
             title = (TextView) view.findViewById(R.id.title);
-            count = (TextView) view.findViewById(R.id.count);
+            price = (TextView) view.findViewById(R.id.price);
             thumbnail = (ImageView) view.findViewById(R.id.thumbnail);
         }
     }
@@ -58,7 +58,7 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.MyViewHolder> 
     public void onBindViewHolder(final MyViewHolder holder, int position) {
         Card c = CardList.get(position);
         holder.title.setText(c.getName());
-        holder.count.setText("Rs:"+c.getPrice());
+        holder.price.setText("Rs:"+c.getPrice());
 
         // loading album cover using Glide library
         Glide.with(mContext).load(c.getThumbnail()).into(holder.thumbnail);

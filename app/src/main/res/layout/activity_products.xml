@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/viewBg"
-    tools:context="com.example.admin.skyway.Products"
-    tools:showIn="@layout/activity_main">
+    tools:context="com.example.admin.skyway.Products">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view"
