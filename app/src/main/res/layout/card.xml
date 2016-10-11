@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:layout_margin="5dp"
+        android:layout_margin="3dp"
         android:elevation="3dp"
         card_view:cardCornerRadius="0dp">
 
@@ -21,7 +21,7 @@
             <ImageView
                 android:id="@+id/thumbnail"
                 android:layout_width="match_parent"
-                android:layout_height="160dp"
+                android:layout_height="120dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:clickable="true"
                 android:scaleType="fitXY" />
@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/title"
                 android:paddingBottom="10dp"
-                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
                 android:textSize="@dimen/songs_count" />
 
 

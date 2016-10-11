@@ -20,7 +20,8 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".NewCustomer" />
         <activity android:name=".BookComplaint" />
-        <activity android:name=".Products"></activity>
+        <activity android:name=".Products" />
+        <activity android:name=".About"></activity>
     </application>
 
 </manifest>

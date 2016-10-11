@@ -1,5 +1,6 @@
 package com.example.admin.skyway;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -12,6 +13,9 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.TypedValue;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -88,7 +92,26 @@ public class Products extends AppCompatActivity {
 
         adapter.notifyDataSetChanged();
     }
-
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.about:
+                startActivity(new Intent(getApplicationContext(), About.class));
+                return true;
+//            case R.id.help:
+//                showHelp();
+//                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
     /**
      * RecyclerView item decoration - give equal margin around grid item
      */

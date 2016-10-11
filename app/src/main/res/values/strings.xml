@@ -7,6 +7,8 @@
     <string name="title_activity_products">Products</string>
     <string name="Name">name</string>
     <string name="Address">address</string>
+    <string name="cusid">Customer ID</string>
+    <string name="skyway">Sky Cable Media</string>
     <string name="Phone_no">Phone no</string>
     <string name="Alternate_no">Alternate no</string>
     <string name="Tentent_of">tenent of </string>
@@ -35,6 +37,13 @@
     <string name="hdmi">HDMI Cable</string>
     <string name="gameselector">Game Selector</string>
     <string name="vgacable">VGA Cable</string>
+    <string name="google_play">googleplay</string>
+    <string name="facebook">facebook</string>
+    <string name="instagram">instagram</string>
+    <string name="website">website</string>
+    <string name="phone">phone</string>
+    <string name="Developer">Developer</string>
+    <string name="Report">Report</string>
 
 
 </resources>

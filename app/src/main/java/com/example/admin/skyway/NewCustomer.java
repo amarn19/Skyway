@@ -3,6 +3,9 @@ package com.example.admin.skyway;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
@@ -31,7 +34,26 @@ public class NewCustomer extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
     }
-
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.about:
+                startActivity(new Intent(getApplicationContext(), About.class));
+                return true;
+//            case R.id.help:
+//                showHelp();
+//                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
     private void initUi() {
 
         nm1 = (EditText) findViewById(R.id.nm);
