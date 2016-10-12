@@ -45,7 +45,7 @@ String complaint1="";
         EditText ad2 = (EditText)findViewById(R.id.address);
         EditText ph2 = (EditText)findViewById(R.id.phone_no);
         EditText alt2 = (EditText)findViewById(R.id.altphone_no);
-
+        EditText res = (EditText)findViewById(R.id.reason);
         EditText tent2 = (EditText)findViewById(R.id.tent);
         CheckBox f=(CheckBox)findViewById(R.id.five) ;
         CheckBox s=(CheckBox)findViewById(R.id.seven) ;
@@ -56,6 +56,7 @@ String complaint1="";
         String phno = ph2.getText().toString();
         String altno = alt2.getText().toString();
         String tentof = tent2.getText().toString();
+        String reason = tent2.getText().toString();
         if(f.isChecked())
         {
             complaint1+=f.getText().toString();
@@ -66,7 +67,10 @@ String complaint1="";
         }
         if(o.isChecked())
         {
+            res.setVisibility(View.VISIBLE);
             complaint1+=o.getText().toString();
+            reason+=res.getText().toString();
+            complaint1="\n"+reason;
         }
 
         details1+="\nName:"+name+"\nAddress :"+addr+"\nPhone no:"+phno+"\nAlternate no:"+altno+"\nTenent of:"+tentof+"\nComplaint Type:"+complaint1;

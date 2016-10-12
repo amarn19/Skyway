@@ -9,7 +9,7 @@
     <string name="Address">address</string>
     <string name="cusid">Customer ID</string>
     <string name="skyway">Sky Cable Media</string>
-    <string name="Phone_no">Phone no</string>
+    <string name="Phone_no">Phone no</string>\
     <string name="Alternate_no">Alternate no</string>
     <string name="Tentent_of">tenent of </string>
     <string name="Payment_mode">Payment mode</string>

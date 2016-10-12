@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "575233210064",
+    "firebase_url": "https://skyway-f7252.firebaseio.com",
+    "project_id": "skyway-f7252",
+    "storage_bucket": "skyway-f7252.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575233210064:android:0f28551fb84a5c76",
+        "android_client_info": {
+          "package_name": "com.example.admin.skyway"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575233210064-435n9p7lcj5b2d54goaibge8onkqlfa9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.admin.skyway",
+            "certificate_hash": "5F7613AA8D894A4A939224AF2D9447A56E37F5EA"
+          }
+        },
+        {
+          "client_id": "575233210064-3afldjjmjm29s2s8qt6o87v31rqqobtb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGkQI7Rsioy7VMtc6718rszbEZ3Fmk4Bg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575233210064-3afldjjmjm29s2s8qt6o87v31rqqobtb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
